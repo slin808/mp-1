@@ -1,0 +1,196 @@
+/* universal css selector */
+* {
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+    
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: calc(1.5vw + 0px);
+    display: block;
+}
+button.operands {
+    display: row;
+    align-items: center;
+    
+}
+button {
+    background-color: red;
+} 
+h1, p, #output{
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+.headercontent {
+    text-align: left;
+}
+
+ #main-content {
+    display: block;
+    background-color: orange;
+    text-align: center;
+    align-items: center;
+}
+
+.calc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#operations {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#calchr {
+    border: 10px solid #1d0030;
+}
+
+#output {
+    border: 5px solid #1d0030; 
+} 
+
+#navbar {
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#bodycontent{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#footer {
+    background-color: tomato
+}
+
+header {
+    background-color: tomato;
+    margin: 0% 0%
+}
+
+ul {
+     display: block; 
+     list-style: none; 
+} 
+
+ul li {
+    border: 3px solid navy;
+    padding: 5%;
+    background-color: lightcoral;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+
+}
+nav {
+    display: block;
+    width: 20%;
+}
+#main-content {
+    width: 80%;
+}
+#body-wrap {
+    border: 10px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: darkorange;
+}
+li.navbut {
+    align-items: left;
+    border: solid darkorange 3px;
+}
+nav #navelm {
+    background-color: orange;
+}
+#navelm {
+    display: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: orange;
+}
+/* @media screen and (max-width: 1000px) {
+    .operands {
+        display:block;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    #bodycontent {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+ /* media query for smaller screens of 750px */
+@media screen and (max-width: 750px) {
+    /* changing content to display by column since we are now on a smaller screen */
+    #bodycontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headercontent {
+        text-align: center;
+    }
+    /* changing the font size for smaller screens to be larger than it was before */
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: calc(2.25vw + .5vh);
+        display: inline;
+    }
+    #body-wrap {
+        border: 2px solid black;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    nav {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    }
+    ul {
+        margin-left:0%;
+        margin-right:0%;
+        width:80%;
+        align-items: center;
+    }
+    ul li {
+        border: 1px solid navy;
+        padding: 2px;
+        text-align: center;
+    }
+
+    div #main-content {
+        width: 100%;
+    }
+    /* horizontal nav bar now instead of vertical */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #navelm {
+        display: row;
+        margin: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    a {
+        font-size: calc(3.1vw + 0px);
+    }
+}
+

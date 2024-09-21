@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | Resume Site</title>
+</head>
+<div id="body-wrap" >
+    <body>
+        <header>
+            <h1 class="headercontent">Projects</h1>
+            <p class="headercontent">My online calculator</p>
+        </header>
+        <div id="bodycontent">
+            <nav id="navelm">
+                <ul style="list-style:none">
+                    <li class="navbut" id="homeli"><a href="index.html">Home</a></li>
+                    <li class="navbut" id="educationli"><a href="education.html">Education</a></li>
+                    <li class="navbut" id="experiencesli"><a href="experience.html">Experiences</a></li>
+                    <li class="navbut" id="achievementsli"><a href="achievements.html">Achievements</a></li>
+                    <li class="navbut" id="referencesli"><a href="references.html">References</a></li>
+                    <li class="navbut" id="projectsli"><a href="projects1.html">Projects</a></li>
+                </ul>
+            </nav>
+            <div id="main-content">
+                <label for="firstnumber" class= "calc">1st Num:</label>
+                <input onclick="removeBackground()" class= "calc" type="text" id="firstnumber">
+                <br>
+                <!-- <table id="operations">
+                    <tr> -->
+                        <!-- <th class="operands" id="op1"> -->
+                        <button class="operands" id="additionOp" onclick="addition()"><img src="addition.png" alt="+"></button>
+                        <!-- </th> -->
+                        <!-- <th class="operands" id="op2"> -->
+                        <button class="operands" id="subtractionOp" onclick="subtractIt()"><img src="subtraction.png" alt="-"></button>
+                        <!-- </th> -->
+                        <!-- <th class="operands" id="op3"> -->
+                        <button class="operands" id = "multiplicationOp" onclick="multiplyIt()"><img src="multiplication.png" alt="*"></button>
+                        <!-- </th> -->
+                        <!-- <th class="operands"> -->
+                        <button class="operands" id = "divisionOp" onclick="divideIt()"><img src="division.png" alt="/"></button>
+                        <!-- </th> -->
+                        <!-- <th class="operands"> -->
+                        <button class="operands" id = "exponentiateOp" onclick="exponentiateIt()"><img src="exponentiation.png" alt="^"></button>
+                        <!-- </th> -->
+                        <!-- <th class="operands"> -->
+                        <button class="operands" id="clearOp" onclick="clearAll()"><img src="clear.png" alt="Clear"></button>
+                        <!-- </th> -->
+                    <!-- </tr>
+                </table> -->
+                <br>
+                <label for="secondnumber" class= "calc">2nd Num:</label>
+                <input onclick="removeBackground()" class="calc" type="text" id="secondnumber">
+                <br>
+                <br>
+                <hr class="calc" id="calchr">
+                <h2 class="calc" id="output">Result will be displayed here</h2>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>All Rights Reserved by <a href="">Credits</a> &#169</p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</div>
+</html>
